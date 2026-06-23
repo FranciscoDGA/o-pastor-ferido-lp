@@ -3,500 +3,272 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Skybook - E-commerce de Livros</title>
-  
+  <title>O Pastor Ferido | Pr. Francisco G. Alves</title>
+  <meta name="description" content="Descubra o mistério de Zacarias 13: o Pastor ferido pela espada do juízo no seu lugar. Um ebook que vai transformar sua compreensão do Evangelho.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./src/style.css">
 </head>
 <body>
 
-  <!-- Top Bar -->
-  <div class="top-bar">
-    <div class="container">
-      <div class="top-links">
-        <a href="#">English</a>
-        <a href="#">USD</a>
+  <!-- =================== HERO =================== -->
+  <section class="hero" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-glow"></div>
+
+    <nav class="navbar">
+      <div class="nav-logo">
+        <span class="nav-logo-cross">✝</span> MAJEV
       </div>
-      <div class="top-links">
-        <a href="#">My Account</a>
-        <a href="#">Help</a>
-        <a href="#">Checkout</a>
+      <a href="https://pay.hotmart.com/X106461552V" class="btn btn-nav" target="_blank" rel="noopener">Comprar Agora</a>
+    </nav>
+
+    <div class="hero-container">
+      <div class="hero-text reveal">
+        <div class="hero-tag">À LUZ DE ZACARIAS 13</div>
+        <h1 class="hero-title">
+          O <em>Pastor</em><br>
+          Ferido
+        </h1>
+        <p class="hero-subtitle">O Pastor, a espada e as ovelhas</p>
+        <p class="hero-desc">
+          A espada que devia cair sobre as ovelhas caiu sobre o Pastor.<br>
+          Entenda o evangelho mais profundo que você já leu.
+        </p>
+        <div class="hero-badges">
+          <span class="badge-item">📖 Ebook Digital</span>
+          <span class="badge-item">🔐 Acesso Imediato</span>
+          <span class="badge-item">✅ Garantia Hotmart</span>
+        </div>
+        <div class="hero-cta">
+          <a href="https://pay.hotmart.com/X106461552V" class="btn btn-primary pulse" target="_blank" rel="noopener">
+            <span>GARANTIR MEU EXEMPLAR</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <p class="secure-note">🔒 Pagamento 100% Seguro via Hotmart</p>
+        </div>
       </div>
+      <div class="hero-image reveal-right">
+        <div class="book-glow"></div>
+        <img src="/book-3d.png" alt="O Pastor Ferido - Ebook" class="book-img">
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator">
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <!-- =================== URGENCY BAR =================== -->
+  <div class="urgency-bar">
+    <div class="urgency-container">
+      <p class="urgency-text">⚡ Oferta por tempo limitado — Garanta antes que acabe!</p>
+      <div class="countdown-boxes">
+        <div class="cbox"><span id="c-hours">04</span><p>Horas</p></div>
+        <div class="csep">:</div>
+        <div class="cbox"><span id="c-mins">59</span><p>Min</p></div>
+        <div class="csep">:</div>
+        <div class="cbox"><span id="c-secs">00</span><p>Seg</p></div>
+      </div>
+      <a href="https://pay.hotmart.com/X106461552V" class="btn btn-urgency" target="_blank" rel="noopener">QUERO COMPRAR</a>
     </div>
   </div>
 
-  <!-- Main Header -->
-  <header class="main-header">
-    <div class="container header-container">
-      <div class="logo">
-        <span class="logo-text">Sky</span><span class="logo-subtext">book</span>
+  <!-- =================== CONTENT REVEAL =================== -->
+  <section class="content-section" id="capitulos">
+    <div class="section-header reveal">
+      <p class="section-tag">O QUE VOCÊ VAI ENCONTRAR</p>
+      <h2 class="section-title">Uma jornada em <span class="highlight">5 partes</span></h2>
+      <p class="section-subtitle">Do profeta Zacarias ao coração do Evangelho</p>
+    </div>
+
+    <div class="cards-track">
+      <div class="content-card reveal-card" style="--delay: 0s">
+        <div class="card-number">01</div>
+        <div class="card-label">PARTE I</div>
+        <h3>As Feridas na Casa dos Amigos</h3>
+        <p>As feridas que mais doem são as que vêm de quem amamos. O Pastor também as conheceu.</p>
+        <div class="card-glow"></div>
       </div>
-      <nav class="main-nav">
-        <ul>
-          <li><a href="#" class="active">Home</a></li>
-          <li><a href="#">Shop</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Pages</a></li>
+      <div class="content-card reveal-card" style="--delay: 0.1s">
+        <div class="card-number">02</div>
+        <div class="card-label">PARTE II</div>
+        <h3>Desperta, Ó Espada</h3>
+        <p>A santidade de Deus não recua. A espada do juízo despertou — e caiu sobre o Pastor.</p>
+        <div class="card-glow"></div>
+      </div>
+      <div class="content-card reveal-card featured-card" style="--delay: 0.2s">
+        <div class="card-number">03</div>
+        <div class="card-label">PARTE III — CENTRAL</div>
+        <h3>O Varão, Companheiro de Deus</h3>
+        <p>O mistério da encarnação: o Filho Eterno tornado homem, o único que poderia carregar o nosso peso.</p>
+        <div class="card-glow"></div>
+      </div>
+      <div class="content-card reveal-card" style="--delay: 0.3s">
+        <div class="card-number">04</div>
+        <div class="card-label">PARTE IV</div>
+        <h3>As Ovelhas Dispersas</h3>
+        <p>A noite da dispersão, o vale da sombra, e a voz do Bom Pastor que busca as ovelhas perdidas.</p>
+        <div class="card-glow"></div>
+      </div>
+      <div class="content-card reveal-card" style="--delay: 0.4s">
+        <div class="card-number">05</div>
+        <div class="card-label">PARTE V</div>
+        <h3>A Mão Sobre os Pequenos</h3>
+        <p>O cuidado terno do Senhor pelas ovelhas fracas. O Pastor ferido se tornou o Pastor restaurador.</p>
+        <div class="card-glow"></div>
+      </div>
+    </div>
+
+    <div class="content-cta reveal">
+      <a href="https://pay.hotmart.com/X106461552V" class="btn btn-primary" target="_blank" rel="noopener">QUERO LER AGORA</a>
+    </div>
+  </section>
+
+  <!-- =================== DECISION SECTION =================== -->
+  <section class="decision-section">
+    <div class="decision-container">
+      <div class="decision-image reveal">
+        <div class="mockup-glow"></div>
+        <img src="/book-3d.png" alt="O Pastor Ferido">
+      </div>
+      <div class="decision-text reveal">
+        <p class="section-tag">FAÇA A DECISÃO QUE PODE MUDAR SUA VIDA</p>
+        <h2>Você nunca mais vai <span class="highlight">ler a cruz da mesma forma</span></h2>
+        <p>Este ebook vai mudar a profundidade com que você compreende o Evangelho. Ao terminar a última página, a frase "pelas suas feridas fomos sarados" terá um peso que você nunca sentiu antes.</p>
+        <ul class="decision-list">
+          <li>
+            <span class="check">✓</span>
+            <div>
+              <strong>Compreenda o Sacrifício do Pastor</strong>
+              <p>Entenda porque a espada tinha que cair sobre Ele em seu lugar.</p>
+            </div>
+          </li>
+          <li>
+            <span class="check">✓</span>
+            <div>
+              <strong>Encontre Consolo nas Suas Feridas</strong>
+              <p>Um livro para os que foram feridos "na casa dos amigos".</p>
+            </div>
+          </li>
+          <li>
+            <span class="check">✓</span>
+            <div>
+              <strong>Aprofunde Sua Teologia e Devoção</strong>
+              <p>Exegese fiel de Zacarias 13 aplicada ao seu coração hoje.</p>
+            </div>
+          </li>
+          <li>
+            <span class="check">✓</span>
+            <div>
+              <strong>Ideal para Líderes e Pastores</strong>
+              <p>Recursos para pregar a cruz com maior riqueza e impacto.</p>
+            </div>
+          </li>
         </ul>
-      </nav>
-      <div class="header-actions">
-        <div class="account-actions">
-          <a href="#">My Wishlist</a>
-          <a href="#">My Compare</a>
-        </div>
-        <div class="cart-box">
-          <div class="cart-icon">🛒<span class="cart-count">0</span></div>
-          <div class="cart-text">
-            <span>MY CART</span><br>
-            <strong>$0.00</strong>
+        <a href="https://pay.hotmart.com/X106461552V" class="btn btn-primary" target="_blank" rel="noopener">GARANTIR MEU ACESSO</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== DELIVERABLES =================== -->
+  <section class="deliverables-section" id="sobre">
+    <div class="section-header reveal">
+      <p class="section-tag">VEJA O QUE VOCÊ RECEBE</p>
+      <h2 class="section-title">Tudo que está <span class="highlight">dentro do ebook</span></h2>
+    </div>
+
+    <div class="deliverables-grid">
+      <div class="deliverable-card reveal-card" style="--delay: 0s">
+        <div class="del-icon">📜</div>
+        <h3>Exegese de Zacarias 13</h3>
+        <p>Uma análise profunda e fiel dos dois versículos mais ricos sobre a morte vicária do Pastor.</p>
+      </div>
+      <div class="deliverable-card reveal-card" style="--delay: 0.1s">
+        <div class="del-icon">✝</div>
+        <h3>Teologia da Cruz</h3>
+        <p>A doutrina da substituição penal explicada com clareza, emoção e beleza literária.</p>
+      </div>
+      <div class="deliverable-card reveal-card" style="--delay: 0.2s">
+        <div class="del-icon">🐑</div>
+        <h3>Cuidado Pastoral</h3>
+        <p>Uma palavra direta para pastores, líderes e todos que cuidam das ovelhas do Senhor.</p>
+      </div>
+      <div class="deliverable-card reveal-card" style="--delay: 0.3s">
+        <div class="del-icon">💔</div>
+        <h3>Consolo para Feridos</h3>
+        <p>Um bálsamo para quem foi traído, abandonado ou ferido dentro da Igreja.</p>
+      </div>
+    </div>
+
+    <div class="deliverables-cta reveal">
+      <a href="https://pay.hotmart.com/X106461552V" class="btn btn-primary pulse" target="_blank" rel="noopener">QUERO MEU EBOOK AGORA</a>
+      <p class="cta-secure">🔒 Acesso imediato · 100% Seguro · Garantia Hotmart</p>
+    </div>
+  </section>
+
+  <!-- =================== AUTHOR =================== -->
+  <section class="author-section" id="autor">
+    <div class="author-container">
+      <div class="author-text reveal">
+        <p class="section-tag">SOBRE O AUTOR</p>
+        <h2>Pr. <span class="highlight">Francisco G. Alves</span></h2>
+        <p>Ministro do Evangelho e fundador do MAJEV — Ministério Arrependei-vos, Jesus Está Voltando. Apaixonado pela Palavra de Deus e pela pregação cristológica, dedicou anos ao estudo das Escrituras com foco na exaltação de Cristo crucificado.</p>
+        <p>"O Pastor Ferido" nasce de um encontro pessoal e profundo com Zacarias 13 — um texto que mudou a forma como o autor prega a cruz.</p>
+        <div class="author-stats">
+          <div class="stat">
+            <span class="stat-num">5+</span>
+            <span class="stat-label">Anos de ministério</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">100%</span>
+            <span class="stat-label">Fidelidade às Escrituras</span>
           </div>
         </div>
       </div>
-    </div>
-  </header>
-
-  <!-- Search Bar Row -->
-  <div class="search-row">
-    <div class="container search-container">
-      <div class="category-btn">
-        <span>≡ CATEGORY</span>
-      </div>
-      <div class="search-box">
-        <select class="category-select">
-          <option>All Categories</option>
-        </select>
-        <input type="text" placeholder="Enter keywords here...">
-        <button class="search-submit">🔍</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- Main Area: Sidebar + Hero -->
-  <main class="main-area container">
-    <aside class="sidebar">
-      <ul class="category-list">
-        <li><a href="#">Arts & Photography</a></li>
-        <li><a href="#">Biographies</a></li>
-        <li><a href="#">Business & Money</a></li>
-        <li><a href="#">Calendars</a></li>
-        <li><a href="#">Children's Books</a></li>
-        <li><a href="#">Comics</a></li>
-        <li><a href="#">Computers</a></li>
-        <li><a href="#">Cookbooks</a></li>
-        <li><a href="#">Education</a></li>
-        <li><a href="#">Music</a></li>
-        <li><a href="#">Romance</a></li>
-      </ul>
-      <div class="sidebar-banner">
-        <div class="sidebar-banner-text">
-          <p>Today Sale</p>
-          <p><strong>50% off</strong></p>
-        </div>
-        <img src="/book-cover.png" alt="Promo" style="width:60px; transform: rotate(-15deg); margin-top:20px;">
-      </div>
-    </aside>
-
-    <div class="hero-content">
-      <div class="hero-banner">
-        <div class="hero-text">
-          <h1>O Pastor <br> Ferido</h1>
-          <p class="hero-author">BY PR. FRANCISCO G. ALVES</p>
-          <div class="hero-price">
-            <span class="badge">-30%</span>
-            <span class="price">R$ 49,90</span>
-          </div>
-          <a href="https://pay.hotmart.com/X106461552V" class="btn btn-buy">Buy Now</a>
-        </div>
-        <div class="hero-book">
-          <img src="/book-cover.png" alt="O Pastor Ferido">
-        </div>
-      </div>
-    </div>
-  </main>
-
-  <!-- Featured Section -->
-  <section class="featured-section container">
-    <h2 class="section-title text-center">FEATURED</h2>
-    <div class="product-grid">
-      <!-- Repeated mockups for bookstore look -->
-      <div class="product-card">
-        <span class="discount-badge">-15%</span>
-        <img src="/book-cover.png" alt="Book">
-        <div class="stars">★★★★★</div>
-        <h3>O Pastor Ferido</h3>
-        <div class="price-box">
-          <span class="old-price">R$ 59,90</span>
-          <span class="new-price">R$ 49,90</span>
-        </div>
-      </div>
-      <div class="product-card">
-        <span class="discount-badge">-20%</span>
-        <img src="/book-cover.png" alt="Book">
-        <div class="stars">★★★★☆</div>
-        <h3>O Pastor Ferido (Ed. Especial)</h3>
-        <div class="price-box">
-          <span class="old-price">R$ 69,90</span>
-          <span class="new-price">R$ 55,90</span>
-        </div>
-      </div>
-      <div class="product-card">
-        <span class="discount-badge">-10%</span>
-        <img src="/book-cover.png" alt="Book">
-        <div class="stars">★★★★★</div>
-        <h3>O Pastor Ferido (Capa Dura)</h3>
-        <div class="price-box">
-          <span class="old-price">R$ 89,90</span>
-          <span class="new-price">R$ 79,90</span>
-        </div>
-      </div>
-      <div class="product-card">
-        <span class="discount-badge">-30%</span>
-        <img src="/book-cover.png" alt="Book">
-        <div class="stars">★★★★★</div>
-        <h3>O Pastor Ferido (Ebook)</h3>
-        <div class="price-box">
-          <span class="old-price">R$ 49,90</span>
-          <span class="new-price">R$ 34,90</span>
-        </div>
+      <div class="author-book reveal-right">
+        <div class="book-glow-author"></div>
+        <img src="/book-3d.png" alt="O Pastor Ferido">
       </div>
     </div>
   </section>
 
-  <!-- Banner -->
-  <div class="promo-banner container">
-    <div class="promo-text">
-      <p>MAJEV Books & Spiritual Literature</p>
-      <h2>SALE UP TO 30% OFF</h2>
-    </div>
-    <div class="promo-images">
-      <img src="/book-cover.png" alt="Book" style="height: 100px;">
-    </div>
-  </div>
-
-  <!-- Deals of the Day -->
-  <section class="deals-section container">
-    <div class="deals-left">
-      <h3 class="deals-title">DEALS OF THE DAY</h3>
-      <h2>O Pastor Ferido <br> Especial</h2>
-      <div class="price-box-large">
-        <span class="old-price">R$ 59,90</span>
-        <span class="badge">-11%</span>
-      </div>
-      <p class="deals-desc">Um livro sobre o Pastor ferido pela espada do juízo em nosso lugar, inspirado no capítulo 13 do livro de Zacarias.</p>
-      
-      <div class="countdown" id="countdown">
-        <div class="time-box"><span id="days">617</span><p>Days</p></div> :
-        <div class="time-box"><span id="hours">04</span><p>Hrs</p></div> :
-        <div class="time-box"><span id="mins">55</span><p>Mins</p></div> :
-        <div class="time-box"><span id="secs">08</span><p>Secs</p></div>
-      </div>
-      <a href="https://pay.hotmart.com/X106461552V" class="btn btn-buy" style="margin-top:20px;">Buy Now</a>
-    </div>
-
-    <div class="deals-center">
-      <img src="/book-cover.png" alt="Book">
-    </div>
-
-    <div class="deals-right product-grid-small">
-      <div class="product-card">
-        <img src="/book-cover.png" alt="Book" style="height: 120px;">
-        <h3>O Pastor Ferido</h3>
-        <span class="new-price">R$ 49,90</span>
-      </div>
-      <div class="product-card">
-        <img src="/book-cover.png" alt="Book" style="height: 120px;">
-        <h3>O Pastor Ferido</h3>
-        <span class="new-price">R$ 49,90</span>
-      </div>
-      <div class="product-card">
-        <img src="/book-cover.png" alt="Book" style="height: 120px;">
-        <h3>O Pastor Ferido</h3>
-        <span class="new-price">R$ 49,90</span>
-      </div>
-      <div class="product-card">
-        <img src="/book-cover.png" alt="Book" style="height: 120px;">
-        <h3>O Pastor Ferido</h3>
-        <span class="new-price">R$ 49,90</span>
-      </div>
+  <!-- =================== FINAL CTA =================== -->
+  <section class="final-cta">
+    <div class="final-cta-overlay"></div>
+    <div class="final-cta-container reveal">
+      <div class="quote-mark">"</div>
+      <blockquote>Ó espada, desperta-te contra o meu pastor… fere o pastor, e espalhar-se-ão as ovelhas.</blockquote>
+      <cite>— Zacarias 13.7</cite>
+      <h2>O Pastor foi ferido <em>no seu lugar.</em></h2>
+      <p>Compreenda esse evangelho com uma profundidade que vai mudar sua vida.</p>
+      <a href="https://pay.hotmart.com/X106461552V" class="btn btn-primary btn-xl pulse" target="_blank" rel="noopener">
+        ADQUIRIR O EBOOK AGORA
+      </a>
+      <p class="final-secure">✅ Acesso imediato &nbsp;|&nbsp; 🔒 Pagamento Seguro &nbsp;|&nbsp; 🛡️ Garantia Hotmart</p>
     </div>
   </section>
 
-  <!-- Best Seller -->
-  <section class="bestseller-section container">
-    <h2 class="section-title text-center">BEST SELLER</h2>
-    <div class="tabs">
-      <button class="tab active">CHRISTIAN BOOKS</button>
-      <button class="tab">AUDIOBOOKS</button>
-      <button class="tab">EBOOKS</button>
-    </div>
-    
-    <div class="product-grid">
-      <!-- 4 books -->
-      <div class="product-card">
-        <span class="discount-badge">-15%</span>
-        <img src="/book-cover.png" alt="Book">
-        <div class="stars">★★★★★</div>
-        <h3>O Pastor Ferido</h3>
-        <div class="price-box">
-          <span class="old-price">R$ 59,90</span>
-          <span class="new-price">R$ 49,90</span>
-        </div>
+  <!-- =================== FOOTER =================== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <span class="nav-logo-cross">✝</span>
+        <strong>MAJEV</strong>
+        <p>Ministério Arrependei-vos, Jesus Está Voltando</p>
       </div>
-      <div class="product-card">
-        <span class="discount-badge">-20%</span>
-        <img src="/book-cover.png" alt="Book">
-        <div class="stars">★★★★☆</div>
-        <h3>O Pastor Ferido (Ed. Especial)</h3>
-        <div class="price-box">
-          <span class="old-price">R$ 69,90</span>
-          <span class="new-price">R$ 55,90</span>
-        </div>
-      </div>
-      <div class="product-card">
-        <span class="discount-badge">-10%</span>
-        <img src="/book-cover.png" alt="Book">
-        <div class="stars">★★★★★</div>
-        <h3>O Pastor Ferido (Capa Dura)</h3>
-        <div class="price-box">
-          <span class="old-price">R$ 89,90</span>
-          <span class="new-price">R$ 79,90</span>
-        </div>
-      </div>
-      <div class="product-card">
-        <span class="discount-badge">-30%</span>
-        <img src="/book-cover.png" alt="Book">
-        <div class="stars">★★★★★</div>
-        <h3>O Pastor Ferido (Ebook)</h3>
-        <div class="price-box">
-          <span class="old-price">R$ 49,90</span>
-          <span class="new-price">R$ 34,90</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Lower Details -->
-  <section class="lower-details container">
-    <div class="featured-list-col">
-      <h3 class="small-title">FEATURED PRODUCTS</h3>
-      <div class="list-item">
-        <img src="/book-cover.png" alt="Book">
-        <div>
-          <h4>O Pastor Ferido</h4>
-          <span class="new-price">R$ 49,90</span>
-        </div>
-      </div>
-      <div class="list-item">
-        <img src="/book-cover.png" alt="Book">
-        <div>
-          <h4>O Pastor Ferido</h4>
-          <span class="new-price">R$ 49,90</span>
-        </div>
-      </div>
-      <div class="list-item">
-        <img src="/book-cover.png" alt="Book">
-        <div>
-          <h4>O Pastor Ferido</h4>
-          <span class="new-price">R$ 49,90</span>
-        </div>
-      </div>
-    </div>
-    
-    <div class="featured-list-col">
-      <h3 class="small-title">BEST PRODUCTS</h3>
-      <div class="list-item">
-        <img src="/book-cover.png" alt="Book">
-        <div>
-          <h4>O Pastor Ferido</h4>
-          <span class="new-price">R$ 49,90</span>
-        </div>
-      </div>
-      <div class="list-item">
-        <img src="/book-cover.png" alt="Book">
-        <div>
-          <h4>O Pastor Ferido</h4>
-          <span class="new-price">R$ 49,90</span>
-        </div>
-      </div>
-      <div class="list-item">
-        <img src="/book-cover.png" alt="Book">
-        <div>
-          <h4>O Pastor Ferido</h4>
-          <span class="new-price">R$ 49,90</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="featured-list-col">
-      <h3 class="small-title">TOP RATED</h3>
-      <div class="list-item">
-        <img src="/book-cover.png" alt="Book">
-        <div>
-          <h4>O Pastor Ferido</h4>
-          <span class="new-price">R$ 49,90</span>
-        </div>
-      </div>
-      <div class="list-item">
-        <img src="/book-cover.png" alt="Book">
-        <div>
-          <h4>O Pastor Ferido</h4>
-          <span class="new-price">R$ 49,90</span>
-        </div>
-      </div>
-      <div class="list-item">
-        <img src="/book-cover.png" alt="Book">
-        <div>
-          <h4>O Pastor Ferido</h4>
-          <span class="new-price">R$ 49,90</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="newsletter-col">
-      <div class="newsletter-box">
-        <h3>SIGN UP FOR SEND NEWSLETTER</h3>
-        <p>You can be always up to date with our weekly news.</p>
-        <input type="email" placeholder="Your email...">
-        <button class="btn btn-white">SEND EMAIL</button>
-      </div>
-    </div>
-  </section>
-
-  <!-- Blog -->
-  <section class="blog-section container">
-    <h2 class="section-title text-center">LATEST FROM OUR BLOG</h2>
-    <div class="blog-grid">
-      <div class="blog-card">
-        <div class="blog-img" style="background-image: url('https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=400&q=80');">
-          <div class="date-badge">14<br>JAN</div>
-        </div>
-        <h4>As Feridas na Casa dos Amigos</h4>
-        <p class="blog-meta">By MAJEV • 0 comments</p>
-        <p>Por que as feridas que mais doem vêm de quem amamos, e como o Pastor lidou com o traidor à mesa.</p>
-      </div>
-      <div class="blog-card">
-        <div class="blog-img" style="background-image: url('https://images.unsplash.com/photo-1491841550275-ad7854e35ca6?auto=format&fit=crop&w=400&q=80');">
-          <div class="date-badge">13<br>JAN</div>
-        </div>
-        <h4>Desperta, Ó Espada</h4>
-        <p class="blog-meta">By MAJEV • 2 comments</p>
-        <p>A santidade de Deus, o cálice no Getsêmani, e a justiça divina que não recuou diante do pecado.</p>
-      </div>
-      <div class="blog-card">
-        <div class="blog-img" style="background-image: url('https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=400&q=80');">
-          <div class="date-badge">10<br>JAN</div>
-        </div>
-        <h4>As Ovelhas Dispersas</h4>
-        <p class="blog-meta">By MAJEV • 5 comments</p>
-        <p>A nossa fragilidade, a noite da dispersão, e como reconhecer a voz do Pastor em meio aos vales escuros.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Features Row -->
-  <div class="features-row">
-    <div class="container features-container">
-      <div class="feature-item">
-        <span class="f-icon">🚚</span>
-        <div>
-          <h4>Free shipping item</h4>
-          <p>For all orders over $50</p>
-        </div>
-      </div>
-      <div class="feature-item">
-        <span class="f-icon">💰</span>
-        <div>
-          <h4>Money back guarantee</h4>
-          <p>100% money back guarantee</p>
-        </div>
-      </div>
-      <div class="feature-item">
-        <span class="f-icon">💳</span>
-        <div>
-          <h4>Cash on delivery</h4>
-          <p>Cash on delivery available</p>
-        </div>
-      </div>
-      <div class="feature-item">
-        <span class="f-icon">🎧</span>
-        <div>
-          <h4>Help & Support</h4>
-          <p>Call us: 1-800-123-4567</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Social Row -->
-  <div class="social-row container">
-    <div class="tweets">
-      <div class="tweet-icon">🐦</div>
-      <div>
-        <strong>LATEST TWEETS</strong>
-        <p>Check out our new book release! #book #christianity</p>
-      </div>
-    </div>
-    <div class="social-icons">
-      <strong>STAY CONNECTED</strong>
-      <div class="icons">
-        <a href="#">T</a>
-        <a href="#">f</a>
-        <a href="#">G</a>
-        <a href="#">in</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Footer -->
-  <footer class="main-footer">
-    <div class="container footer-grid">
-      <div class="footer-col">
-        <h4>INFORMATION</h4>
-        <ul>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Delivery Information</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms & Conditions</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>OUR SERVICES</h4>
-        <ul>
-          <li><a href="#">Online Returns</a></li>
-          <li><a href="#">Shipping Rates</a></li>
-          <li><a href="#">Advanced Search</a></li>
-          <li><a href="#">Affiliates</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>MY ACCOUNT</h4>
-        <ul>
-          <li><a href="#">My Account</a></li>
-          <li><a href="#">My Cart</a></li>
-          <li><a href="#">Login</a></li>
-          <li><a href="#">Wishlist</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>CONTACT US</h4>
-        <p>123 Street Name, City, Country</p>
-        <p>Email: info@majev.org</p>
-        <p>Phone: (123) 456-7890</p>
+      <div class="footer-links">
+        <a href="https://go.hotmart.com/X106461552V" target="_blank">Página do Produto</a>
+        <a href="https://pay.hotmart.com/X106461552V" target="_blank">Comprar</a>
       </div>
     </div>
     <div class="footer-bottom">
-      <div class="container bottom-flex">
-        <p>Free Book E-commerce Template &copy; 2026</p>
-        <p>www.majev.org</p>
-        <div class="payment-methods">
-          💳 💵 🪙
-        </div>
-      </div>
+      <p>© 2026 O Pastor Ferido · Pr. Francisco G. Alves · Todos os direitos reservados.</p>
     </div>
   </footer>
 
-  <script src="/src/main.js"></script>
+  <script type="module" src="/src/main.js"></script>
 </body>
 </html>

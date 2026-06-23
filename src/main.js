@@ -1,33 +1,69 @@
-// Simple Countdown Logic for Deals of the day
-document.addEventListener('DOMContentLoaded', () => {
-  const daysEl = document.getElementById('days');
-  const hoursEl = document.getElementById('hours');
-  const minsEl = document.getElementById('mins');
-  const secsEl = document.getElementById('secs');
+// ============ NAVBAR SCROLL ============
+const navbar = document.querySelector('.navbar');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 60) {
+    navbar.classList.add('scrolled');
+  } else {
+    navbar.classList.remove('scrolled');
+  }
+});
 
-  // Let's set a target date a few days from now just for visual effect
-  let targetDate = new Date();
-  targetDate.setDate(targetDate.getDate() + 617); // Using the exact number from the image
-  targetDate.setHours(targetDate.getHours() + 4);
-  targetDate.setMinutes(targetDate.getMinutes() + 55);
-  targetDate.setSeconds(targetDate.getSeconds() + 8);
+// ============ COUNTDOWN — Urgency Bar ============
+function startCountdown(hours, mins, secs) {
+  const hoursEl = document.getElementById('c-hours');
+  const minsEl  = document.getElementById('c-mins');
+  const secsEl  = document.getElementById('c-secs');
+  if (!hoursEl) return;
 
-  function updateCountdown() {
-    const now = new Date().getTime();
-    const distance = targetDate.getTime() - now;
+  // Persist across refresh using sessionStorage
+  let saved = sessionStorage.getItem('countdown-end');
+  let endTime;
 
-    if (distance < 0) return;
-
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-    if (daysEl) daysEl.innerText = days.toString().padStart(3, '0');
-    if (hoursEl) hoursEl.innerText = hours.toString().padStart(2, '0');
-    if (minsEl) minsEl.innerText = minutes.toString().padStart(2, '0');
-    if (secsEl) secsEl.innerText = seconds.toString().padStart(2, '0');
+  if (saved) {
+    endTime = parseInt(saved, 10);
+  } else {
+    endTime = Date.now() + ((hours * 3600 + mins * 60 + secs) * 1000);
+    sessionStorage.setItem('countdown-end', endTime);
   }
 
-  setInterval(updateCountdown, 1000);
+  function update() {
+    const diff = endTime - Date.now();
+    if (diff <= 0) {
+      hoursEl.textContent = '00';
+      minsEl.textContent  = '00';
+      secsEl.textContent  = '00';
+      return;
+    }
+    const h = Math.floor(diff / 3600000);
+    const m = Math.floor((diff % 3600000) / 60000);
+    const s = Math.floor((diff % 60000) / 1000);
+    hoursEl.textContent = String(h).padStart(2, '0');
+    minsEl.textContent  = String(m).padStart(2, '0');
+    secsEl.textContent  = String(s).padStart(2, '0');
+    requestAnimationFrame(update);
+  }
+  update();
+}
+startCountdown(4, 59, 0);
+
+// ============ SCROLL REVEAL ============
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+
+document.querySelectorAll(
+  '.reveal, .reveal-right, .content-card, .deliverable-card, .reveal-card'
+).forEach(el => revealObserver.observe(el));
+
+// ============ TABS (Best Seller) ============
+document.querySelectorAll('.tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+  });
 });
