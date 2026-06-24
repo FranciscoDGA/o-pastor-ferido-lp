@@ -237,8 +237,8 @@ img { display: block; }
 
 /* RIGHT: Books */
 .hero-books {
-  flex: 0 0 520px;
-  width: 520px;
+  flex: 0 0 560px;
+  width: 560px;
   position: relative;
   display: flex;
   align-items: center;
@@ -258,22 +258,36 @@ img { display: block; }
   z-index: 0;
 }
 
-.books-img {
-  width: 100%;
-  max-width: 520px;
+/* Clip container: rounds corners to hide black bg edges */
+.books-clip {
   position: relative;
   z-index: 2;
-  /* Remove black using screen blend mode */
+  border-radius: 10px;
+  overflow: hidden;
+  /* Also softens the black edge with a matching dark inner shadow */
+  box-shadow:
+    inset 0 0 0 1px rgba(201,168,76,0.08),
+    0 30px 70px rgba(0,0,0,0.7);
+}
+
+.books-img {
+  width: 100%;
+  max-width: 560px;
+  min-height: 480px;
+  object-fit: contain;
+  position: relative;
+  z-index: 2;
+  /* Round corners to clip the black background rectangle */
+  border-radius: 10px;
+  /* Screen removes pure black; brightness boost helps near-black areas */
   mix-blend-mode: screen;
-  /* Crisp, high-quality rendering */
-  image-rendering: -webkit-optimize-contrast;
-  image-rendering: crisp-edges;
-  /* Soft gold rim glow + depth shadow */
+  /* Crisp quality + subtle glow */
   filter:
-    drop-shadow(-8px 20px 40px rgba(0,0,0,0.95))
-    drop-shadow(0 0 60px rgba(201,168,76,0.12))
-    contrast(1.05)
-    saturate(1.1);
+    drop-shadow(-8px 24px 48px rgba(0,0,0,0.9))
+    drop-shadow(0 0 70px rgba(201,168,76,0.14))
+    contrast(1.06)
+    saturate(1.12)
+    brightness(1.08);
   animation: bookFloat 6s ease-in-out infinite;
 }
 
