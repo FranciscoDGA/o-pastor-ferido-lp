@@ -157,7 +157,7 @@ img { display: block; max-width: 100%; }
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  background: radial-gradient(ellipse at 60% 50%, #2a0a10 0%, #110810 40%, #080608 100%);
+  background: radial-gradient(ellipse at 30% 50%, #2a0a10 0%, #110810 45%, #080608 100%);
 }
 .hero::before {
   content: '';
@@ -169,7 +169,7 @@ img { display: block; max-width: 100%; }
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, rgba(8,6,8,0.85) 55%, rgba(8,6,8,0.2) 100%);
+  background: linear-gradient(to right, rgba(8,6,8,0.95) 40%, rgba(8,6,8,0.4) 70%, rgba(8,6,8,0.0) 100%);
 }
 .hero-glow {
   position: absolute;
@@ -186,15 +186,22 @@ img { display: block; max-width: 100%; }
   position: relative;
   z-index: 2;
   display: flex;
-  align-items: center;
-  gap: 60px;
-  max-width: var(--max-w);
-  margin: 0 auto;
-  padding: 140px 40px 80px;
+  align-items: stretch;
+  min-height: 100vh;
   width: 100%;
+  max-width: 100%;
+  padding: 0;
+  gap: 0;
 }
 
-.hero-text { flex: 1; }
+.hero-text {
+  flex: 0 0 52%;
+  max-width: 52%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 140px 60px 80px 80px;
+}
 
 .hero-tag {
   display: inline-block;
@@ -260,10 +267,12 @@ img { display: block; max-width: 100%; }
 
 .hero-image {
   flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  overflow: visible;
+  min-height: 100vh;
 }
 .book-glow {
   position: absolute;
@@ -274,17 +283,21 @@ img { display: block; max-width: 100%; }
   pointer-events: none;
 }
 .book-img {
-  max-width: 520px;
-  width: 100%;
-  filter: drop-shadow(-30px 30px 60px rgba(0,0,0,0.8));
+  height: 115vh;
+  width: auto;
+  max-width: none;
+  position: absolute;
+  bottom: -5vh;
+  right: -20px;
+  filter: drop-shadow(-40px 40px 80px rgba(0,0,0,0.7));
   mix-blend-mode: multiply;
-  animation: float 6s ease-in-out infinite;
-  position: relative;
+  animation: float 7s ease-in-out infinite;
   z-index: 2;
+  transform-origin: bottom right;
 }
 @keyframes float {
-  0%, 100% { transform: translateY(0px) rotate(-2deg); }
-  50%       { transform: translateY(-20px) rotate(0deg); }
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-18px); }
 }
 
 .scroll-indicator {
@@ -782,13 +795,31 @@ cite { font-size: 13px; color: var(--text-muted); display: block; margin-bottom:
   .navbar.scrolled { padding: 14px 24px; }
 
   .hero-container {
-    flex-direction: column-reverse;
-    padding: 120px 24px 60px;
+    flex-direction: column;
+    min-height: auto;
+    padding: 0;
     text-align: center;
-    gap: 40px;
   }
-  .hero-image { width: 100%; }
-  .book-img { max-width: 280px; margin: 0 auto; }
+  .hero-text {
+    flex: none;
+    max-width: 100%;
+    padding: 120px 24px 40px;
+  }
+  .hero-image {
+    min-height: 50vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .book-img {
+    position: relative;
+    height: 55vw;
+    max-height: 400px;
+    bottom: auto;
+    right: auto;
+    margin: 0 auto 40px;
+  }
   .hero-cta { align-items: center; }
   .hero-badges { justify-content: center; }
 
