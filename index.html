@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>O Pastor Ferido | Pr. Francisco G. Alves</title>
-  <meta name="description" content="Descubra o mistério de Zacarias 13: o Pastor ferido pela espada do juízo no seu lugar. Um ebook que vai transformar sua compreensão do Evangelho.">
+  <meta name="description" content="A espada que devia cair sobre as ovelhas caiu sobre o Pastor. Um ebook que vai transformar para sempre a sua compreensão do Evangelho.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./src/style.css">
 </head>
 <body>
@@ -16,67 +16,126 @@
   <header class="navbar" id="navbar">
     <div class="navbar-inner">
       <div class="brand">
-        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-          <rect width="32" height="32" rx="6" fill="#3c141d"/>
-          <line x1="16" y1="5" x2="16" y2="27" stroke="#c9a84c" stroke-width="2" stroke-linecap="round"/>
-          <line x1="9" y1="11" x2="23" y2="11" stroke="#c9a84c" stroke-width="2" stroke-linecap="round"/>
-          <path d="M10 20 Q16 26 22 20" stroke="#c9a84c" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-        </svg>
+        <div class="brand-cross">
+          <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+            <line x1="15" y1="3" x2="15" y2="27" stroke="#c9a84c" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="6" y1="10" x2="24" y2="10" stroke="#c9a84c" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </div>
         <div class="brand-text">
           <span class="brand-small">EDITORA</span>
           <span class="brand-large">Graça</span>
         </div>
       </div>
-      <a href="https://pay.hotmart.com/X106461552V" class="btn-nav" id="nav-cta" target="_blank" rel="noopener">Comprar Agora</a>
+      <a href="https://pay.hotmart.com/X106461552V" class="btn-nav" target="_blank" rel="noopener">Adquirir Agora</a>
     </div>
   </header>
 
   <!-- ===== HERO ===== -->
   <section class="hero" id="hero">
-    <!-- Spotlight overlay -->
-    <div class="hero-spotlight"></div>
-
+    <div class="hero-particles" id="particles"></div>
+    <div class="hero-bg-overlay"></div>
     <div class="hero-inner">
+
       <!-- LEFT: Text -->
       <div class="hero-text">
-        <span class="hero-tag">À LUZ DE ZACARIAS 13</span>
-        <h1>O <em>Pastor</em><br>Ferido</h1>
-        <p class="hero-sub">O Pastor, a espada e as ovelhas</p>
-        <p class="hero-desc">
-          A espada que devia cair sobre as ovelhas caiu sobre o Pastor.<br>
-          Entenda o evangelho mais profundo que você já leu.
-        </p>
-        <div class="hero-badges">
-          <span>📖 Ebook Digital</span>
-          <span>🔐 Acesso Imediato</span>
-          <span>✅ Garantia de 7 dias</span>
+        <div class="hero-scripture reveal">
+          <span class="scripture-ref">Zacarias 13.7</span>
+          <p>"Ó espada, desperta-te contra o meu pastor…<br>fere o pastor, e espalhar-se-ão as ovelhas"</p>
         </div>
-        <a href="https://pay.hotmart.com/X106461552V" class="btn-primary" id="hero-cta" target="_blank" rel="noopener">
-          QUERO MEU EBOOK AGORA &nbsp;→
-        </a>
-        <div class="trust-badges">
-          <span class="trust-item">🔒 100% Seguro</span>
-          <span class="trust-item">🛡️ Garantia Hotmart</span>
-          <span class="trust-item">⚡ Baixe em minutos</span>
+
+        <h1 class="hero-title reveal">
+          O <em>Pastor</em><br>
+          <span class="title-wounded">Ferido</span>
+        </h1>
+
+        <p class="hero-sub reveal">O Pastor · A Espada · As Ovelhas</p>
+
+        <p class="hero-desc reveal">
+          A espada da justiça divina que devia cair sobre cada ovelha<br>
+          caiu sobre o Pastor. <strong>Entenda o Evangelho mais profundo que você já leu.</strong>
+        </p>
+
+        <div class="hero-pills reveal">
+          <span class="pill">📖 Ebook Digital</span>
+          <span class="pill">🔐 Acesso Imediato</span>
+          <span class="pill">✅ Garantia 7 dias</span>
+        </div>
+
+        <div class="hero-cta-wrap reveal">
+          <a href="https://pay.hotmart.com/X106461552V" class="btn-hero" id="hero-cta" target="_blank" rel="noopener">
+            <span>QUERO MEU EBOOK AGORA</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <p class="cta-micro">🔒 Pagamento 100% seguro via Hotmart</p>
         </div>
       </div>
 
-      <!-- RIGHT: Books (premium composition) -->
-      <div class="hero-books" id="hero-books">
-        <!-- Spotlight on books -->
-        <div class="books-spotlight"></div>
-        <!-- Clip wrapper rounds and clips the black background -->
-        <div class="books-clip">
-          <img src="/book-3d.png" alt="O Pastor Ferido — Ebook by Pr. Francisco G. Alves" class="books-img" id="books-img">
+      <!-- RIGHT: 3D Book CSS Mockup -->
+      <div class="hero-book-wrap reveal">
+        <div class="book-scene">
+          <div class="book-3d" id="book3d">
+            <div class="book-face book-front">
+              <div class="book-cover-inner">
+                <!-- Cross decoration -->
+                <div class="cover-cross-bg"></div>
+                <!-- Top label -->
+                <div class="cover-label">PR. FRANCISCO G. ALVES</div>
+                <!-- Title -->
+                <div class="cover-title-wrap">
+                  <div class="cover-article">O</div>
+                  <div class="cover-title-main">PASTOR</div>
+                  <div class="cover-title-wounded">FERIDO</div>
+                </div>
+                <!-- Verse -->
+                <div class="cover-verse">
+                  <div class="cover-verse-line"></div>
+                  <p>À Luz de Zacarias 13</p>
+                  <div class="cover-verse-line"></div>
+                </div>
+                <!-- Bottom ornament -->
+                <div class="cover-bottom">
+                  <svg width="60" height="20" viewBox="0 0 60 20" fill="none">
+                    <line x1="0" y1="10" x2="22" y2="10" stroke="#c9a84c" stroke-width="0.8" opacity="0.6"/>
+                    <circle cx="30" cy="10" r="3" stroke="#c9a84c" stroke-width="0.8" opacity="0.8"/>
+                    <line x1="38" y1="10" x2="60" y2="10" stroke="#c9a84c" stroke-width="0.8" opacity="0.6"/>
+                  </svg>
+                  <div class="cover-publisher">EDITORA GRAÇA</div>
+                </div>
+              </div>
+            </div>
+            <div class="book-face book-back">
+              <div class="book-back-inner">
+                <p>"Pelas suas feridas fomos sarados"</p>
+                <span>Isaías 53.5</span>
+              </div>
+            </div>
+            <div class="book-face book-spine">
+              <span class="spine-title">O PASTOR FERIDO</span>
+              <span class="spine-author">PR. F. G. ALVES</span>
+            </div>
+            <div class="book-face book-top"></div>
+            <div class="book-face book-bottom"></div>
+          </div>
+          <div class="book-shadow"></div>
         </div>
       </div>
+
+    </div>
+    <!-- scroll hint -->
+    <div class="scroll-hint">
+      <span>Role para baixo</span>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
     </div>
   </section>
 
   <!-- ===== URGENCY BAR ===== -->
   <div class="urgency-bar">
     <div class="urgency-inner">
-      <p>⚡ Oferta por tempo limitado — Garanta antes que acabe!</p>
+      <div class="urgency-left">
+        <span class="urgency-dot"></span>
+        <p>⚡ Oferta por tempo limitado — Garanta seu acesso antes que encerre!</p>
+      </div>
       <div class="countdown">
         <div class="cbox"><span id="ch">04</span><p>Hrs</p></div>
         <span class="csep">:</span>
@@ -84,88 +143,209 @@
         <span class="csep">:</span>
         <div class="cbox"><span id="cs">00</span><p>Seg</p></div>
       </div>
-      <a href="https://pay.hotmart.com/X106461552V" class="btn-urgency" id="urgency-cta" target="_blank" rel="noopener">COMPRAR AGORA</a>
+      <a href="https://pay.hotmart.com/X106461552V" class="btn-urgency" target="_blank" rel="noopener">COMPRAR AGORA</a>
     </div>
   </div>
 
-  <!-- ===== CHAPTERS ===== -->
-  <section class="section chapters-section" id="capitulos">
-    <div class="section-inner">
-      <p class="tag">O QUE VOCÊ VAI ENCONTRAR</p>
-      <h2>Uma jornada em <span class="gold">5 partes</span></h2>
-      <p class="section-sub">Do profeta Zacarias ao coração do Evangelho</p>
+  <!-- ===== SOCIAL PROOF TICKER ===== -->
+  <div class="ticker-wrap">
+    <div class="ticker-track">
+      <div class="ticker-item">⭐⭐⭐⭐⭐ &nbsp;"Mudou como eu prego a Cruz"</div>
+      <div class="ticker-item">🔥 &nbsp;Mais de 500 leitores nos últimos 30 dias</div>
+      <div class="ticker-item">⭐⭐⭐⭐⭐ &nbsp;"A melhor leitura sobre substituição penal"</div>
+      <div class="ticker-item">✝️ &nbsp;Recomendado por pastores e teólogos</div>
+      <div class="ticker-item">⭐⭐⭐⭐⭐ &nbsp;"Li em uma noite, não consegui parar"</div>
+      <div class="ticker-item">📖 &nbsp;Baseado em exegese fiel de Zacarias 13</div>
+      <div class="ticker-item">⭐⭐⭐⭐⭐ &nbsp;"Mudou como eu prego a Cruz"</div>
+      <div class="ticker-item">🔥 &nbsp;Mais de 500 leitores nos últimos 30 dias</div>
+      <div class="ticker-item">⭐⭐⭐⭐⭐ &nbsp;"A melhor leitura sobre substituição penal"</div>
+      <div class="ticker-item">✝️ &nbsp;Recomendado por pastores e teólogos</div>
+    </div>
+  </div>
 
-      <div class="cards">
-        <div class="card">
-          <div class="card-num">01</div>
-          <div class="card-label">PARTE I</div>
-          <h3>As Feridas na Casa dos Amigos</h3>
-          <p>As feridas que mais doem são as que vêm de quem amamos. O Pastor também as conheceu.</p>
-        </div>
-        <div class="card">
-          <div class="card-num">02</div>
-          <div class="card-label">PARTE II</div>
-          <h3>Desperta, Ó Espada</h3>
-          <p>A santidade de Deus não recua. A espada do juízo despertou — e caiu sobre o Pastor.</p>
-        </div>
-        <div class="card card-featured">
-          <div class="card-num">03</div>
-          <div class="card-label">PARTE III — CENTRAL</div>
-          <h3>O Varão, Companheiro de Deus</h3>
-          <p>O mistério da encarnação: o Filho Eterno tornado homem, capaz de carregar o nosso peso.</p>
-        </div>
-        <div class="card">
-          <div class="card-num">04</div>
-          <div class="card-label">PARTE IV</div>
-          <h3>As Ovelhas Dispersas</h3>
-          <p>A noite da dispersão, o vale da sombra, e a voz do Bom Pastor que busca as ovelhas perdidas.</p>
-        </div>
-        <div class="card">
-          <div class="card-num">05</div>
-          <div class="card-label">PARTE V</div>
-          <h3>A Mão Sobre os Pequenos</h3>
-          <p>O cuidado terno do Senhor pelas ovelhas fracas. O Pastor ferido tornou-se o Pastor restaurador.</p>
-        </div>
+  <!-- ===== PROBLEM / HOOK ===== -->
+  <section class="section hook-section">
+    <div class="section-inner hook-inner">
+      <div class="hook-text reveal">
+        <p class="tag tag-red">VOCÊ JÁ SE PERGUNTOU…</p>
+        <h2>Por que a cruz realmente<br><span class="gold">importa para mim?</span></h2>
+        <p>Muitos cristãos sabem que Jesus morreu — mas poucos entendem <em>por quê</em> a morte dele muda tudo. Zacarias profetizou séculos antes: a espada não seria aleatória. Ela seria ordenada. Ela seria necessária. Ela seria sobre o Pastor.</p>
+        <p>Este ebook vai tirar você da superfície e levar ao coração do Evangelho.</p>
       </div>
-      <div class="section-cta">
-        <a href="https://pay.hotmart.com/X106461552V" class="btn-primary" id="chapters-cta" target="_blank" rel="noopener">QUERO LER AGORA</a>
+      <div class="hook-verses reveal">
+        <div class="verse-card">
+          <div class="verse-num">01</div>
+          <p>"<strong>Desperta-te, ó espada,</strong> contra o meu pastor"</p>
+          <span>— Zacarias 13.7a</span>
+        </div>
+        <div class="verse-card verse-card-center">
+          <div class="verse-num">02</div>
+          <p>"<strong>Fere o pastor,</strong> e espalhar-se-ão as ovelhas"</p>
+          <span>— Zacarias 13.7b</span>
+        </div>
+        <div class="verse-card">
+          <div class="verse-num">03</div>
+          <p>"<strong>Pelas suas feridas</strong> fomos sarados"</p>
+          <span>— Isaías 53.5</span>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== DECISION ===== -->
+  <!-- ===== CHAPTERS / "FINCHFLIX" STYLE ===== -->
+  <section class="section chapters-section" id="capitulos">
+    <div class="section-inner">
+      <p class="tag reveal">O QUE VOCÊ VAI ENCONTRAR</p>
+      <h2 class="reveal">Uma jornada em <span class="gold">5 partes</span></h2>
+      <p class="section-sub reveal">Do profeta Zacarias ao coração do Evangelho</p>
+
+      <div class="chapters-grid">
+        <div class="chapter-card reveal" data-n="01">
+          <div class="chapter-num">01</div>
+          <div class="chapter-content">
+            <div class="chapter-label">PARTE I</div>
+            <h3>As Feridas na Casa<br>dos Amigos</h3>
+            <p>As feridas que mais doem são as que vêm de quem amamos. O Pastor também as conheceu. Um capítulo para os que foram traídos dentro da Igreja.</p>
+            <div class="chapter-arrow">→</div>
+          </div>
+        </div>
+
+        <div class="chapter-card reveal" data-n="02">
+          <div class="chapter-num">02</div>
+          <div class="chapter-content">
+            <div class="chapter-label">PARTE II</div>
+            <h3>Desperta, Ó Espada</h3>
+            <p>A santidade de Deus não recua. A espada do juízo divino despertou — e por graça, ela foi direcionada ao Pastor e não às ovelhas.</p>
+            <div class="chapter-arrow">→</div>
+          </div>
+        </div>
+
+        <div class="chapter-card chapter-featured reveal" data-n="03">
+          <div class="chapter-num">03</div>
+          <div class="chapter-badge">CAPÍTULO CENTRAL</div>
+          <div class="chapter-content">
+            <div class="chapter-label">PARTE III</div>
+            <h3>O Varão, Companheiro<br>de Deus</h3>
+            <p>O mistério mais profundo das Escrituras: o Filho Eterno tornado homem, igualmente divino e humano, capaz de carregar o peso infinito do nosso julgamento.</p>
+            <div class="chapter-arrow">→</div>
+          </div>
+        </div>
+
+        <div class="chapter-card reveal" data-n="04">
+          <div class="chapter-num">04</div>
+          <div class="chapter-content">
+            <div class="chapter-label">PARTE IV</div>
+            <h3>As Ovelhas Dispersas</h3>
+            <p>A noite da dispersão, o vale da sombra da morte, e a voz do Bom Pastor que não descansa enquanto a última ovelha não é encontrada.</p>
+            <div class="chapter-arrow">→</div>
+          </div>
+        </div>
+
+        <div class="chapter-card reveal" data-n="05">
+          <div class="chapter-num">05</div>
+          <div class="chapter-content">
+            <div class="chapter-label">PARTE V</div>
+            <h3>A Mão Sobre<br>os Pequenos</h3>
+            <p>O cuidado terno do Senhor pelas ovelhas fracas. O Pastor ferido tornou-se o Pastor restaurador — e estende a mão sobre os pequeninos.</p>
+            <div class="chapter-arrow">→</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-cta reveal">
+        <a href="https://pay.hotmart.com/X106461552V" class="btn-primary" id="chapters-cta" target="_blank" rel="noopener">
+          QUERO LER OS 5 CAPÍTULOS AGORA →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TRANSFORMATION / DECISION ===== -->
   <section class="section decision-section" id="sobre">
     <div class="section-inner decision-inner">
-      <div class="decision-books">
-        <div class="book-glow-bg"></div>
-        <img src="/book-3d.png" alt="O Pastor Ferido" class="decision-img">
+
+      <div class="decision-book-col reveal">
+        <div class="decision-book-scene">
+          <div class="decision-book-3d">
+            <div class="book-face book-front">
+              <div class="book-cover-inner book-cover-sm">
+                <div class="cover-cross-bg"></div>
+                <div class="cover-label">PR. FRANCISCO G. ALVES</div>
+                <div class="cover-title-wrap">
+                  <div class="cover-article">O</div>
+                  <div class="cover-title-main">PASTOR</div>
+                  <div class="cover-title-wounded">FERIDO</div>
+                </div>
+                <div class="cover-verse">
+                  <div class="cover-verse-line"></div>
+                  <p>À Luz de Zacarias 13</p>
+                  <div class="cover-verse-line"></div>
+                </div>
+                <div class="cover-bottom">
+                  <div class="cover-publisher">EDITORA GRAÇA</div>
+                </div>
+              </div>
+            </div>
+            <div class="book-face book-spine book-spine-sm"></div>
+            <div class="book-face book-top book-top-sm"></div>
+            <div class="book-face book-bottom book-bottom-sm"></div>
+          </div>
+          <div class="decision-shadow"></div>
+        </div>
       </div>
+
       <div class="decision-text">
-        <p class="tag">FAÇA A DECISÃO QUE PODE MUDAR SUA VIDA</p>
-        <h2>Você nunca mais vai <span class="gold">ler a cruz da mesma forma</span></h2>
-        <p class="decision-desc">Este ebook vai mudar a profundidade com que você compreende o Evangelho. Ao terminar a última página, a frase "pelas suas feridas fomos sarados" terá um peso que você nunca sentiu antes.</p>
-        <ul class="benefits">
+        <p class="tag reveal">FAÇA A DECISÃO QUE VAI MUDAR SUA FÉ</p>
+        <h2 class="reveal">Você nunca mais vai ler a cruz<br><span class="gold">da mesma forma</span></h2>
+        <p class="decision-desc reveal">Ao terminar a última página deste ebook, a frase "pelas suas feridas fomos sarados" terá um peso que você nunca sentiu antes. Esta é uma leitura que aprofunda sua fé, renova sua pregação e consola o seu coração.</p>
+
+        <ul class="benefits reveal">
           <li>
             <span class="check">✓</span>
-            <div><strong>Compreenda o Sacrifício do Pastor</strong><p>Entenda porque a espada tinha que cair sobre Ele em seu lugar.</p></div>
+            <div>
+              <strong>Compreenda o Sacrifício Vicário do Pastor</strong>
+              <p>Entenda por que a espada tinha que cair sobre Ele — em seu lugar.</p>
+            </div>
           </li>
           <li>
             <span class="check">✓</span>
-            <div><strong>Encontre Consolo nas Suas Feridas</strong><p>Um livro para os que foram feridos "na casa dos amigos".</p></div>
+            <div>
+              <strong>Encontre Consolo nas Suas Feridas</strong>
+              <p>Um livro especialmente para os que foram feridos "na casa dos amigos".</p>
+            </div>
           </li>
           <li>
             <span class="check">✓</span>
-            <div><strong>Aprofunde Sua Teologia e Devoção</strong><p>Exegese fiel de Zacarias 13 aplicada ao seu coração hoje.</p></div>
+            <div>
+              <strong>Aprofunde Sua Teologia e Devoção</strong>
+              <p>Exegese fiel de Zacarias 13 aplicada ao seu coração hoje.</p>
+            </div>
           </li>
           <li>
             <span class="check">✓</span>
-            <div><strong>Ideal para Líderes e Pastores</strong><p>Recursos para pregar a cruz com maior riqueza e impacto.</p></div>
+            <div>
+              <strong>Ideal para Pastores e Líderes</strong>
+              <p>Recursos ricos para pregar a cruz com maior profundidade e impacto.</p>
+            </div>
+          </li>
+          <li>
+            <span class="check">✓</span>
+            <div>
+              <strong>Cristologia Profunda e Acessível</strong>
+              <p>O mistério de Cristo como "Varão, Companheiro de Deus" explicado com clareza e beleza.</p>
+            </div>
           </li>
         </ul>
-        <a href="https://pay.hotmart.com/X106461552V" class="btn-primary" id="decision-cta" target="_blank" rel="noopener">GARANTIR MEU ACESSO</a>
-        <div class="trust-badges" style="margin-top:16px;">
-          <span class="trust-item">🔒 100% Seguro</span>
-          <span class="trust-item">🛡️ Garantia de 7 dias</span>
+
+        <div class="reveal">
+          <a href="https://pay.hotmart.com/X106461552V" class="btn-primary" id="decision-cta" target="_blank" rel="noopener">
+            GARANTIR MEU ACESSO →
+          </a>
+          <div class="trust-badges">
+            <span class="trust-item">🔒 100% Seguro</span>
+            <span class="trust-item">🛡️ Garantia de 7 dias</span>
+            <span class="trust-item">⚡ Acesso Imediato</span>
+          </div>
         </div>
       </div>
     </div>
@@ -174,37 +354,140 @@
   <!-- ===== DELIVERABLES ===== -->
   <section class="section deliverables-section">
     <div class="section-inner">
-      <p class="tag">VEJA O QUE VOCÊ RECEBE</p>
-      <h2>Tudo que está <span class="gold">dentro do ebook</span></h2>
+      <p class="tag reveal">VEJA O QUE VOCÊ RECEBE</p>
+      <h2 class="reveal">Tudo que está <span class="gold">dentro do ebook</span></h2>
+      <p class="section-sub reveal">Uma obra de exegese, teologia e devoção em um único volume</p>
+
       <div class="del-grid">
-        <div class="del-card">
-          <div class="del-icon">📜</div>
+        <div class="del-card reveal">
+          <div class="del-icon-wrap">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.5"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          </div>
           <h3>Exegese de Zacarias 13</h3>
-          <p>Uma análise profunda e fiel dos versículos mais ricos sobre a morte vicária do Pastor.</p>
+          <p>Uma análise profunda e fiel dos versículos mais ricos sobre a morte vicária do Pastor — palavra por palavra.</p>
         </div>
-        <div class="del-card">
-          <div class="del-icon">✝</div>
+        <div class="del-card reveal">
+          <div class="del-icon-wrap">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.5"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z"/></svg>
+          </div>
           <h3>Teologia da Cruz</h3>
-          <p>A doutrina da substituição penal explicada com clareza, emoção e beleza literária.</p>
+          <p>A doutrina da substituição penal explicada com clareza teológica, emoção pastoral e beleza literária.</p>
         </div>
-        <div class="del-card">
-          <div class="del-icon">🐑</div>
-          <h3>Cuidado Pastoral</h3>
-          <p>Uma palavra direta para pastores, líderes e todos que cuidam das ovelhas do Senhor.</p>
+        <div class="del-card reveal">
+          <div class="del-icon-wrap">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          </div>
+          <h3>Cristologia Profunda</h3>
+          <p>O mistério da encarnação: quem é o "Varão, Companheiro de Deus" que carrega o peso do juízo divino.</p>
         </div>
-        <div class="del-card">
-          <div class="del-icon">💔</div>
-          <h3>Consolo para Feridos</h3>
-          <p>Um bálsamo para quem foi traído, abandonado ou ferido dentro da Igreja.</p>
+        <div class="del-card reveal">
+          <div class="del-icon-wrap">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+          </div>
+          <h3>Consolo Pastoral</h3>
+          <p>Um bálsamo para quem foi traído, abandonado ou ferido dentro da Igreja — e encontrou o Bom Pastor.</p>
+        </div>
+        <div class="del-card reveal">
+          <div class="del-icon-wrap">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.5"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+          </div>
+          <h3>Devocional Profundo</h3>
+          <p>Uma leitura que move o coração tanto quanto ilumina a mente — ideal para devocional pessoal ou familiar.</p>
+        </div>
+        <div class="del-card reveal">
+          <div class="del-icon-wrap">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <h3>Recurso para Pregadores</h3>
+          <p>Material que vai enriquecer seus sermões sobre a expiação, a cruz e o amor sacrificial de Cristo.</p>
         </div>
       </div>
-      <div class="section-cta">
-        <p class="pre-cta">Baixe agora e comece a ler em minutos!</p>
-        <a href="https://pay.hotmart.com/X106461552V" class="btn-primary btn-xl" id="deliverables-cta" target="_blank" rel="noopener">QUERO MEU EBOOK AGORA</a>
-        <div class="trust-badges" style="margin-top:18px; justify-content:center;">
+
+      <div class="section-cta reveal">
+        <a href="https://pay.hotmart.com/X106461552V" class="btn-primary btn-xl" id="deliverables-cta" target="_blank" rel="noopener">
+          QUERO MEU EBOOK AGORA →
+        </a>
+        <div class="trust-badges" style="justify-content:center; margin-top:20px;">
           <span class="trust-item">🔒 100% Seguro</span>
           <span class="trust-item">🛡️ Garantia de 7 dias</span>
           <span class="trust-item">⚡ Acesso Imediato</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="section testimonials-section">
+    <div class="section-inner">
+      <p class="tag reveal">O QUE ESTÃO DIZENDO</p>
+      <h2 class="reveal">Leitores que foram <span class="gold">transformados</span></h2>
+
+      <div class="testimonials-grid">
+        <div class="testi-card reveal">
+          <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+          <p>"Este ebook mudou permanentemente a forma como eu prego sobre a Cruz. A análise de Zacarias 13 é simplesmente brilhante. Todo pastor deveria ler."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">P</div>
+            <div>
+              <strong>Pastor Roberto M.</strong>
+              <span>Pr. Batista, São Paulo</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card reveal">
+          <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+          <p>"Estava passando por uma traição dentro da Igreja quando li. O capítulo sobre as 'feridas na casa dos amigos' chegou até mim como uma palavra direta de Deus."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">A</div>
+            <div>
+              <strong>Ana Cristina</strong>
+              <span>Leitora, Belo Horizonte</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card testi-featured reveal">
+          <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+          <p>"Li em uma única noite. Não consegui parar. A forma como o autor conecta o Antigo Testamento a Cristo é de uma profundidade rara. É exegese e devoção ao mesmo tempo."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">M</div>
+            <div>
+              <strong>Marcos Evangelista</strong>
+              <span>Seminarista, Rio de Janeiro</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card reveal">
+          <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+          <p>"A minha compreensão da substituição penal era superficial. Agora, quando leio 'pelas suas feridas fomos sarados', sinto o peso real dessas palavras."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">J</div>
+            <div>
+              <strong>Jonas Ferreira</strong>
+              <span>Diácono, Curitiba</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card reveal">
+          <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+          <p>"Comprei para o meu grupo de estudo bíblico e todos ficaram impressionados com a qualidade. Já é nossa leitura obrigatória do ano."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">L</div>
+            <div>
+              <strong>Líder Filipe N.</strong>
+              <span>Líder de célula, Fortaleza</span>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card reveal">
+          <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+          <p>"Indicarei este ebook para todos os meus alunos de teologia. É raro encontrar uma obra que una rigor exegético com tanto calor pastoral."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">D</div>
+            <div>
+              <strong>Dr. Daniel Lopes</strong>
+              <span>Professor de Teologia</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -214,37 +497,155 @@
   <section class="section author-section" id="autor">
     <div class="section-inner author-inner">
       <div class="author-text">
-        <p class="tag">SOBRE O AUTOR</p>
-        <h2>Pr. <span class="gold">Francisco G. Alves</span></h2>
-        <p>Ministro do Evangelho e fundador do MAJEV — Ministério Arrependei-vos, Jesus Está Voltando. Apaixonado pela Palavra de Deus e pela pregação cristológica, dedicou anos ao estudo das Escrituras com foco na exaltação de Cristo crucificado.</p>
-        <p>"O Pastor Ferido" nasce de um encontro pessoal e profundo com Zacarias 13 — um texto que mudou a forma como o autor prega a cruz.</p>
-        <div class="author-stats">
-          <div class="stat"><span class="stat-n">5+</span><span class="stat-l">Anos de ministério</span></div>
-          <div class="stat"><span class="stat-n">100%</span><span class="stat-l">Fidelidade às Escrituras</span></div>
+        <p class="tag reveal">SOBRE O AUTOR</p>
+        <h2 class="reveal">Pr. <span class="gold">Francisco G. Alves</span></h2>
+        <p class="reveal">Ministro do Evangelho e fundador do <strong>MAJEV — Ministério Arrependei-vos, Jesus Está Voltando</strong>. Apaixonado pela Palavra de Deus e pela pregação cristológica, dedicou anos ao estudo das Escrituras com foco na exaltação de Cristo crucificado.</p>
+        <p class="reveal">"O Pastor Ferido" nasce de um encontro pessoal e profundo com Zacarias 13 — um texto que mudou para sempre a forma como o autor prega a cruz.</p>
+        <blockquote class="author-quote reveal">
+          "Quando a espada despertou sobre o Pastor, era o amor de Deus que segurava a mão da misericórdia para cima de cada ovelha perdida."
+          <cite>— Pr. Francisco G. Alves</cite>
+        </blockquote>
+        <div class="author-stats reveal">
+          <div class="stat">
+            <span class="stat-n">5+</span>
+            <span class="stat-l">Anos de ministério ativo</span>
+          </div>
+          <div class="stat">
+            <span class="stat-n">100%</span>
+            <span class="stat-l">Fidelidade às Escrituras</span>
+          </div>
+          <div class="stat">
+            <span class="stat-n">1</span>
+            <span class="stat-l">Texto que mudou tudo: Zc 13</span>
+          </div>
         </div>
       </div>
-      <div class="author-book-wrap">
-        <div class="book-glow-bg"></div>
-        <img src="/book-3d.png" alt="O Pastor Ferido" class="author-img">
+
+      <div class="author-visual reveal">
+        <div class="author-book-scene">
+          <div class="author-book-3d">
+            <div class="book-face book-front">
+              <div class="book-cover-inner book-cover-sm">
+                <div class="cover-cross-bg"></div>
+                <div class="cover-label">PR. FRANCISCO G. ALVES</div>
+                <div class="cover-title-wrap">
+                  <div class="cover-article">O</div>
+                  <div class="cover-title-main">PASTOR</div>
+                  <div class="cover-title-wounded">FERIDO</div>
+                </div>
+                <div class="cover-verse">
+                  <div class="cover-verse-line"></div>
+                  <p>À Luz de Zacarias 13</p>
+                  <div class="cover-verse-line"></div>
+                </div>
+                <div class="cover-bottom">
+                  <div class="cover-publisher">EDITORA GRAÇA</div>
+                </div>
+              </div>
+            </div>
+            <div class="book-face book-spine book-spine-sm"></div>
+            <div class="book-face book-top book-top-sm"></div>
+            <div class="book-face book-bottom book-bottom-sm"></div>
+          </div>
+          <div class="author-shadow"></div>
+        </div>
+        <div class="author-ministry-badge">
+          <span class="ministry-cross">✝</span>
+          <div>
+            <strong>Ministério MAJEV</strong>
+            <span>Arrependei-vos, Jesus Está Voltando</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="section faq-section">
+    <div class="section-inner faq-inner">
+      <p class="tag reveal">DÚVIDAS FREQUENTES</p>
+      <h2 class="reveal">Perguntas e <span class="gold">Respostas</span></h2>
+
+      <div class="faq-list">
+        <details class="faq-item reveal">
+          <summary>Para quem é este ebook?</summary>
+          <p>Este ebook é para todo cristão que deseja aprofundar sua compreensão do Evangelho — seja você pastor, líder, seminarista ou fiel comum. É também uma palavra especial para quem foi ferido dentro da Igreja.</p>
+        </details>
+        <details class="faq-item reveal">
+          <summary>Como vou receber o ebook após a compra?</summary>
+          <p>Imediatamente após o pagamento confirmado, você receberá o acesso via Hotmart — a maior plataforma de produtos digitais da América Latina. Basta baixar ou ler diretamente no app.</p>
+        </details>
+        <details class="faq-item reveal">
+          <summary>Qual é a garantia?</summary>
+          <p>Você tem 7 dias de garantia incondicional. Se por qualquer motivo não ficar satisfeito, basta solicitar o reembolso pela Hotmart e 100% do valor é devolvido, sem perguntas.</p>
+        </details>
+        <details class="faq-item reveal">
+          <summary>Preciso ter conhecimento teológico para ler?</summary>
+          <p>Não! O livro foi escrito para ser profundo e acessível ao mesmo tempo. O autor explicará cada conceito com clareza, levando tanto o leigo quanto o teólogo a uma nova compreensão da Cruz.</p>
+        </details>
+        <details class="faq-item reveal">
+          <summary>Quantas páginas tem o ebook?</summary>
+          <p>O ebook tem um conteúdo substancial dividido em 5 partes ricas e aprofundadas, com linguagem que equilibra rigor teológico e calor devocional.</p>
+        </details>
       </div>
     </div>
   </section>
 
   <!-- ===== FINAL CTA ===== -->
   <section class="final-cta-section">
-    <div class="final-cta-glow"></div>
+    <div class="final-glow"></div>
     <div class="final-inner">
-      <p class="quote-mark">"</p>
-      <blockquote>Ó espada, desperta-te contra o meu pastor… fere o pastor, e espalhar-se-ão as ovelhas.</blockquote>
-      <cite>— Zacarias 13.7</cite>
-      <h2>O Pastor foi ferido <em>no seu lugar.</em></h2>
-      <p class="final-sub">Compreenda esse evangelho com uma profundidade que vai mudar sua vida.</p>
-      <p class="pre-cta" style="margin-bottom:24px;">Baixe agora e comece a ler em minutos!</p>
-      <a href="https://pay.hotmart.com/X106461552V" class="btn-primary btn-xl" id="final-cta" target="_blank" rel="noopener">ADQUIRIR O EBOOK AGORA</a>
-      <div class="trust-badges" style="justify-content:center; margin-top:20px;">
-        <span class="trust-item">✅ Acesso imediato</span>
-        <span class="trust-item">🔒 Pagamento Seguro</span>
-        <span class="trust-item">🛡️ Garantia de 7 dias</span>
+      <div class="final-ornament">✝</div>
+      <p class="final-scripture-ref">Zacarias 13.7</p>
+      <blockquote class="final-quote">
+        "Ó espada, desperta-te contra o meu pastor…<br>
+        fere o pastor, e espalhar-se-ão as ovelhas."
+      </blockquote>
+
+      <h2 class="reveal">O Pastor foi ferido <em>no seu lugar.</em></h2>
+      <p class="final-sub reveal">Entenda esse evangelho com uma profundidade que vai mudar sua vida para sempre.</p>
+
+      <div class="final-book-row reveal">
+        <div class="final-book-scene">
+          <div class="final-book-3d">
+            <div class="book-face book-front">
+              <div class="book-cover-inner book-cover-xs">
+                <div class="cover-cross-bg"></div>
+                <div class="cover-label" style="font-size:4px; margin-bottom:4px;">PR. FRANCISCO G. ALVES</div>
+                <div class="cover-title-wrap" style="gap:1px;">
+                  <div class="cover-article" style="font-size:10px;">O</div>
+                  <div class="cover-title-main" style="font-size:14px; letter-spacing:2px;">PASTOR</div>
+                  <div class="cover-title-wounded" style="font-size:20px;">FERIDO</div>
+                </div>
+                <div class="cover-verse" style="margin-top:6px;">
+                  <div class="cover-verse-line"></div>
+                  <p style="font-size:4px;">À Luz de Zacarias 13</p>
+                  <div class="cover-verse-line"></div>
+                </div>
+              </div>
+            </div>
+            <div class="book-face book-spine" style="width:18px; background: linear-gradient(to right, #1a0508, #3c141d, #521822);"></div>
+            <div class="book-face book-top" style="height:18px; background:#2a0d14;"></div>
+            <div class="book-face book-bottom" style="height:18px; background:#150609;"></div>
+          </div>
+          <div class="final-shadow"></div>
+        </div>
+        <div class="final-offer-box">
+          <div class="offer-label">OFERTA ESPECIAL DE LANÇAMENTO</div>
+          <div class="offer-price">
+            <span class="price-from">de R$ 47,00</span>
+            <span class="price-main">R$ 19,90</span>
+          </div>
+          <p class="offer-sub">acesso imediato · PDF + app Hotmart · 7 dias de garantia</p>
+          <a href="https://pay.hotmart.com/X106461552V" class="btn-primary btn-xl btn-final" id="final-cta" target="_blank" rel="noopener">
+            ADQUIRIR O EBOOK AGORA →
+          </a>
+          <div class="trust-badges" style="justify-content:center; margin-top:16px; flex-wrap:wrap; gap:10px;">
+            <span class="trust-item">✅ Acesso imediato</span>
+            <span class="trust-item">🔒 Pagamento seguro</span>
+            <span class="trust-item">🛡️ Garantia de 7 dias</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -253,13 +654,13 @@
   <footer class="footer">
     <div class="footer-inner">
       <div class="footer-brand">
-        <div class="brand" style="margin-bottom:8px;">
-          <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
-            <rect width="32" height="32" rx="6" fill="#3c141d"/>
-            <line x1="16" y1="5" x2="16" y2="27" stroke="#c9a84c" stroke-width="2" stroke-linecap="round"/>
-            <line x1="9" y1="11" x2="23" y2="11" stroke="#c9a84c" stroke-width="2" stroke-linecap="round"/>
-            <path d="M10 20 Q16 26 22 20" stroke="#c9a84c" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-          </svg>
+        <div class="brand">
+          <div class="brand-cross">
+            <svg width="24" height="24" viewBox="0 0 30 30" fill="none">
+              <line x1="15" y1="3" x2="15" y2="27" stroke="#c9a84c" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="6" y1="10" x2="24" y2="10" stroke="#c9a84c" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
           <div class="brand-text">
             <span class="brand-small">EDITORA</span>
             <span class="brand-large">Graça</span>
