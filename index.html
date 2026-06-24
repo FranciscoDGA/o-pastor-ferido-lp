@@ -27,44 +27,51 @@
           <span class="brand-large">Graça</span>
         </div>
       </div>
-      <a href="https://pay.hotmart.com/X106461552V" class="btn-nav" target="_blank" rel="noopener">Comprar Agora</a>
+      <a href="https://pay.hotmart.com/X106461552V" class="btn-nav" id="nav-cta" target="_blank" rel="noopener">Comprar Agora</a>
     </div>
   </header>
 
-  <!-- HERO -->
-  <section class="hero">
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <!-- Spotlight overlay -->
+    <div class="hero-spotlight"></div>
+
     <div class="hero-inner">
       <!-- LEFT: Text -->
       <div class="hero-text">
         <span class="hero-tag">À LUZ DE ZACARIAS 13</span>
         <h1>O <em>Pastor</em><br>Ferido</h1>
         <p class="hero-sub">O Pastor, a espada e as ovelhas</p>
-        <p class="hero-desc">A espada que devia cair sobre as ovelhas caiu sobre o Pastor.<br>Entenda o evangelho mais profundo que você já leu.</p>
+        <p class="hero-desc">
+          A espada que devia cair sobre as ovelhas caiu sobre o Pastor.<br>
+          Entenda o evangelho mais profundo que você já leu.
+        </p>
         <div class="hero-badges">
           <span>📖 Ebook Digital</span>
           <span>🔐 Acesso Imediato</span>
-          <span>✅ Garantia Hotmart</span>
+          <span>✅ Garantia de 7 dias</span>
         </div>
-        <a href="https://pay.hotmart.com/X106461552V" class="btn-primary" target="_blank" rel="noopener">
-          GARANTIR MEU EXEMPLAR &nbsp;→
+        <a href="https://pay.hotmart.com/X106461552V" class="btn-primary" id="hero-cta" target="_blank" rel="noopener">
+          QUERO MEU EBOOK AGORA &nbsp;→
         </a>
-        <p class="hero-secure">🔒 Pagamento 100% Seguro via Hotmart</p>
+        <div class="trust-badges">
+          <span class="trust-item">🔒 100% Seguro</span>
+          <span class="trust-item">🛡️ Garantia Hotmart</span>
+          <span class="trust-item">⚡ Baixe em minutos</span>
+        </div>
       </div>
 
-      <!-- RIGHT: Books (duplicated for depth) -->
-      <div class="hero-book">
-        <div class="book-stack">
-          <!-- Back book - slightly rotated and offset -->
-          <img src="/book-3d.png" alt="O Pastor Ferido" class="book-back">
-          <!-- Front book - main -->
-          <img src="/book-3d.png" alt="O Pastor Ferido" class="book-front">
-        </div>
+      <!-- RIGHT: Books (premium composition) -->
+      <div class="hero-books" id="hero-books">
+        <!-- Spotlight on books -->
+        <div class="books-spotlight"></div>
+        <img src="/book-3d.png" alt="O Pastor Ferido — Ebook by Pr. Francisco G. Alves" class="books-img" id="books-img">
       </div>
     </div>
   </section>
 
-  <!-- URGENCY BAR -->
-  <div class="urgency">
+  <!-- ===== URGENCY BAR ===== -->
+  <div class="urgency-bar">
     <div class="urgency-inner">
       <p>⚡ Oferta por tempo limitado — Garanta antes que acabe!</p>
       <div class="countdown">
@@ -74,12 +81,12 @@
         <span class="csep">:</span>
         <div class="cbox"><span id="cs">00</span><p>Seg</p></div>
       </div>
-      <a href="https://pay.hotmart.com/X106461552V" class="btn-urgency" target="_blank" rel="noopener">COMPRAR AGORA</a>
+      <a href="https://pay.hotmart.com/X106461552V" class="btn-urgency" id="urgency-cta" target="_blank" rel="noopener">COMPRAR AGORA</a>
     </div>
   </div>
 
-  <!-- CHAPTERS -->
-  <section class="section chapters" id="capitulos">
+  <!-- ===== CHAPTERS ===== -->
+  <section class="section chapters-section" id="capitulos">
     <div class="section-inner">
       <p class="tag">O QUE VOCÊ VAI ENCONTRAR</p>
       <h2>Uma jornada em <span class="gold">5 partes</span></h2>
@@ -98,9 +105,9 @@
           <h3>Desperta, Ó Espada</h3>
           <p>A santidade de Deus não recua. A espada do juízo despertou — e caiu sobre o Pastor.</p>
         </div>
-        <div class="card featured-card">
+        <div class="card card-featured">
           <div class="card-num">03</div>
-          <div class="card-label">PARTE III</div>
+          <div class="card-label">PARTE III — CENTRAL</div>
           <h3>O Varão, Companheiro de Deus</h3>
           <p>O mistério da encarnação: o Filho Eterno tornado homem, capaz de carregar o nosso peso.</p>
         </div>
@@ -117,22 +124,23 @@
           <p>O cuidado terno do Senhor pelas ovelhas fracas. O Pastor ferido tornou-se o Pastor restaurador.</p>
         </div>
       </div>
-      <div style="text-align:center; margin-top:50px;">
-        <a href="https://pay.hotmart.com/X106461552V" class="btn-primary" target="_blank" rel="noopener">QUERO LER AGORA</a>
+      <div class="section-cta">
+        <a href="https://pay.hotmart.com/X106461552V" class="btn-primary" id="chapters-cta" target="_blank" rel="noopener">QUERO LER AGORA</a>
       </div>
     </div>
   </section>
 
-  <!-- DECISION -->
-  <section class="section decision" id="sobre">
+  <!-- ===== DECISION ===== -->
+  <section class="section decision-section" id="sobre">
     <div class="section-inner decision-inner">
-      <div class="decision-book">
-        <img src="/book-3d.png" alt="O Pastor Ferido">
+      <div class="decision-books">
+        <div class="book-glow-bg"></div>
+        <img src="/book-3d.png" alt="O Pastor Ferido" class="decision-img">
       </div>
       <div class="decision-text">
         <p class="tag">FAÇA A DECISÃO QUE PODE MUDAR SUA VIDA</p>
         <h2>Você nunca mais vai <span class="gold">ler a cruz da mesma forma</span></h2>
-        <p>Este ebook vai mudar a profundidade com que você compreende o Evangelho. Ao terminar a última página, a frase "pelas suas feridas fomos sarados" terá um peso que você nunca sentiu antes.</p>
+        <p class="decision-desc">Este ebook vai mudar a profundidade com que você compreende o Evangelho. Ao terminar a última página, a frase "pelas suas feridas fomos sarados" terá um peso que você nunca sentiu antes.</p>
         <ul class="benefits">
           <li>
             <span class="check">✓</span>
@@ -151,13 +159,17 @@
             <div><strong>Ideal para Líderes e Pastores</strong><p>Recursos para pregar a cruz com maior riqueza e impacto.</p></div>
           </li>
         </ul>
-        <a href="https://pay.hotmart.com/X106461552V" class="btn-primary" target="_blank" rel="noopener">GARANTIR MEU ACESSO</a>
+        <a href="https://pay.hotmart.com/X106461552V" class="btn-primary" id="decision-cta" target="_blank" rel="noopener">GARANTIR MEU ACESSO</a>
+        <div class="trust-badges" style="margin-top:16px;">
+          <span class="trust-item">🔒 100% Seguro</span>
+          <span class="trust-item">🛡️ Garantia de 7 dias</span>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- DELIVERABLES -->
-  <section class="section deliverables">
+  <!-- ===== DELIVERABLES ===== -->
+  <section class="section deliverables-section">
     <div class="section-inner">
       <p class="tag">VEJA O QUE VOCÊ RECEBE</p>
       <h2>Tudo que está <span class="gold">dentro do ebook</span></h2>
@@ -183,15 +195,20 @@
           <p>Um bálsamo para quem foi traído, abandonado ou ferido dentro da Igreja.</p>
         </div>
       </div>
-      <div style="text-align:center; margin-top:50px;">
-        <a href="https://pay.hotmart.com/X106461552V" class="btn-primary btn-xl" target="_blank" rel="noopener">QUERO MEU EBOOK AGORA</a>
-        <p class="secure-txt">🔒 Acesso imediato · 100% Seguro · Garantia Hotmart</p>
+      <div class="section-cta">
+        <p class="pre-cta">Baixe agora e comece a ler em minutos!</p>
+        <a href="https://pay.hotmart.com/X106461552V" class="btn-primary btn-xl" id="deliverables-cta" target="_blank" rel="noopener">QUERO MEU EBOOK AGORA</a>
+        <div class="trust-badges" style="margin-top:18px; justify-content:center;">
+          <span class="trust-item">🔒 100% Seguro</span>
+          <span class="trust-item">🛡️ Garantia de 7 dias</span>
+          <span class="trust-item">⚡ Acesso Imediato</span>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- AUTHOR -->
-  <section class="section author" id="autor">
+  <!-- ===== AUTHOR ===== -->
+  <section class="section author-section" id="autor">
     <div class="section-inner author-inner">
       <div class="author-text">
         <p class="tag">SOBRE O AUTOR</p>
@@ -203,30 +220,37 @@
           <div class="stat"><span class="stat-n">100%</span><span class="stat-l">Fidelidade às Escrituras</span></div>
         </div>
       </div>
-      <div class="author-book">
-        <img src="/book-3d.png" alt="O Pastor Ferido">
+      <div class="author-book-wrap">
+        <div class="book-glow-bg"></div>
+        <img src="/book-3d.png" alt="O Pastor Ferido" class="author-img">
       </div>
     </div>
   </section>
 
-  <!-- FINAL CTA -->
-  <section class="final-cta">
+  <!-- ===== FINAL CTA ===== -->
+  <section class="final-cta-section">
+    <div class="final-cta-glow"></div>
     <div class="final-inner">
       <p class="quote-mark">"</p>
       <blockquote>Ó espada, desperta-te contra o meu pastor… fere o pastor, e espalhar-se-ão as ovelhas.</blockquote>
       <cite>— Zacarias 13.7</cite>
       <h2>O Pastor foi ferido <em>no seu lugar.</em></h2>
-      <p>Compreenda esse evangelho com uma profundidade que vai mudar sua vida.</p>
-      <a href="https://pay.hotmart.com/X106461552V" class="btn-primary btn-xl" target="_blank" rel="noopener">ADQUIRIR O EBOOK AGORA</a>
-      <p class="secure-txt">✅ Acesso imediato &nbsp;|&nbsp; 🔒 Pagamento Seguro &nbsp;|&nbsp; 🛡️ Garantia Hotmart</p>
+      <p class="final-sub">Compreenda esse evangelho com uma profundidade que vai mudar sua vida.</p>
+      <p class="pre-cta" style="margin-bottom:24px;">Baixe agora e comece a ler em minutos!</p>
+      <a href="https://pay.hotmart.com/X106461552V" class="btn-primary btn-xl" id="final-cta" target="_blank" rel="noopener">ADQUIRIR O EBOOK AGORA</a>
+      <div class="trust-badges" style="justify-content:center; margin-top:20px;">
+        <span class="trust-item">✅ Acesso imediato</span>
+        <span class="trust-item">🔒 Pagamento Seguro</span>
+        <span class="trust-item">🛡️ Garantia de 7 dias</span>
+      </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- ===== FOOTER ===== -->
   <footer class="footer">
     <div class="footer-inner">
       <div class="footer-brand">
-        <div class="brand">
+        <div class="brand" style="margin-bottom:8px;">
           <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
             <rect width="32" height="32" rx="6" fill="#3c141d"/>
             <line x1="16" y1="5" x2="16" y2="27" stroke="#c9a84c" stroke-width="2" stroke-linecap="round"/>
