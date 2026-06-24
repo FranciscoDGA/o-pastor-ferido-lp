@@ -126,9 +126,29 @@ img { display: block; max-width: 100%; }
   color: var(--cream);
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
 }
-.nav-logo-cross { color: var(--gold); font-size: 22px; }
+.logo-icon-svg { flex-shrink: 0; border-radius: 6px; }
+.logo-text-group {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+.logo-main {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+.logo-grace {
+  font-family: var(--font-serif);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--gold);
+  letter-spacing: 0.5px;
+}
 
 /* ============ HERO ============ */
 .hero {
@@ -254,8 +274,10 @@ img { display: block; max-width: 100%; }
   pointer-events: none;
 }
 .book-img {
-  max-width: 420px;
+  max-width: 520px;
+  width: 100%;
   filter: drop-shadow(-30px 30px 60px rgba(0,0,0,0.8));
+  mix-blend-mode: multiply;
   animation: float 6s ease-in-out infinite;
   position: relative;
   z-index: 2;
@@ -483,8 +505,15 @@ img { display: block; max-width: 100%; }
   position: relative;
   display: flex;
   justify-content: center;
+  align-items: stretch;
 }
-.decision-image img { max-width: 380px; filter: drop-shadow(-20px 20px 50px rgba(0,0,0,0.9)); }
+.decision-image img {
+  max-width: 460px;
+  width: 100%;
+  align-self: center;
+  filter: drop-shadow(-20px 20px 50px rgba(0,0,0,0.9));
+  mix-blend-mode: multiply;
+}
 .mockup-glow {
   position: absolute;
   width: 350px;
@@ -618,9 +647,15 @@ img { display: block; max-width: 100%; }
   flex: 1;
   display: flex;
   justify-content: center;
+  align-items: center;
   position: relative;
 }
-.author-book img { max-width: 340px; filter: drop-shadow(-20px 20px 50px rgba(0,0,0,0.9)); }
+.author-book img {
+  max-width: 440px;
+  width: 100%;
+  filter: drop-shadow(-20px 20px 50px rgba(0,0,0,0.9));
+  mix-blend-mode: multiply;
+}
 .book-glow-author {
   position: absolute;
   width: 300px;
